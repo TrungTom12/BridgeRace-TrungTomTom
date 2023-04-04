@@ -124,7 +124,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 391080149711412732}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: 20.89, z: -52.84}
+  m_LocalPosition: {x: 3, y: 20.4, z: -52.84}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -238,6 +238,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5326218512665655109}
     m_Modifications:
+    - target: {fileID: 6031195578650309090, guid: 997b9f16d17b87e4f82c96d2d0205822, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.953717
+      objectReference: {fileID: 0}
+    - target: {fileID: 6031195578650309090, guid: 997b9f16d17b87e4f82c96d2d0205822, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.30070576
+      objectReference: {fileID: 0}
+    - target: {fileID: 6031195578650309090, guid: 997b9f16d17b87e4f82c96d2d0205822, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6031195578650309090, guid: 997b9f16d17b87e4f82c96d2d0205822, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6031195578650309090, guid: 997b9f16d17b87e4f82c96d2d0205822, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -35
+      objectReference: {fileID: 0}
     - target: {fileID: 6702325097380066514, guid: 997b9f16d17b87e4f82c96d2d0205822, type: 3}
       propertyPath: m_Name
       value: Bridge (1)
@@ -300,6 +320,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5326218512665655109}
     m_Modifications:
+    - target: {fileID: 6031195578650309090, guid: 997b9f16d17b87e4f82c96d2d0205822, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.953717
+      objectReference: {fileID: 0}
+    - target: {fileID: 6031195578650309090, guid: 997b9f16d17b87e4f82c96d2d0205822, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.30070576
+      objectReference: {fileID: 0}
+    - target: {fileID: 6031195578650309090, guid: 997b9f16d17b87e4f82c96d2d0205822, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6031195578650309090, guid: 997b9f16d17b87e4f82c96d2d0205822, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6031195578650309090, guid: 997b9f16d17b87e4f82c96d2d0205822, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -35
+      objectReference: {fileID: 0}
     - target: {fileID: 6702325097380066514, guid: 997b9f16d17b87e4f82c96d2d0205822, type: 3}
       propertyPath: m_Name
       value: Bridge
@@ -362,6 +402,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5326218512665655109}
     m_Modifications:
+    - target: {fileID: 6031195578650309090, guid: 997b9f16d17b87e4f82c96d2d0205822, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.4400005
+      objectReference: {fileID: 0}
+    - target: {fileID: 6031195578650309090, guid: 997b9f16d17b87e4f82c96d2d0205822, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.049999
+      objectReference: {fileID: 0}
+    - target: {fileID: 6031195578650309090, guid: 997b9f16d17b87e4f82c96d2d0205822, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.953717
+      objectReference: {fileID: 0}
+    - target: {fileID: 6031195578650309090, guid: 997b9f16d17b87e4f82c96d2d0205822, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.30070576
+      objectReference: {fileID: 0}
+    - target: {fileID: 6031195578650309090, guid: 997b9f16d17b87e4f82c96d2d0205822, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6031195578650309090, guid: 997b9f16d17b87e4f82c96d2d0205822, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6031195578650309090, guid: 997b9f16d17b87e4f82c96d2d0205822, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -35
+      objectReference: {fileID: 0}
     - target: {fileID: 6702325097380066514, guid: 997b9f16d17b87e4f82c96d2d0205822, type: 3}
       propertyPath: m_Name
       value: Bridge (2)
