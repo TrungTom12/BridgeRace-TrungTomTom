@@ -9,8 +9,8 @@ public class CameraFollow : MonoBehaviour
     public Transform TF;
     [SerializeField] Vector3 offset;
 
-    private void FixedUpdate()
+    private void LateUpdate()
     {
-        TF.position = Vector3.Lerp(TF.position, playerTF.position + offset, Time.fixedDeltaTime * 5f);
+        TF.position = Vector3.Lerp(TF.position, playerTF.position + offset, Time.deltaTime * 5f);
     }
 }
