@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3489047642387342866}
   - component: {fileID: 5594179959325014789}
-  m_Layer: 0
+  - component: {fileID: 800072252175651337}
+  m_Layer: 7
   m_Name: Stair (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58604555453846128}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.022281, y: 0.320992, z: -12.535719}
+  m_LocalPosition: {x: 10.022281, y: 0.32099175, z: -12.535719}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -46,8 +47,23 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 3, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &800072252175651337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58604555453846128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9544157d1c276d740bfef83857bf573d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorType: 0
+  colorData: {fileID: 11400000, guid: 0a0aea11295d7ee4cb1996dac66e96ea, type: 2}
+  renderer: {fileID: 6953098855029891049}
 --- !u!1 &160551724816561258
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,7 +240,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4103378654403731456}
   - component: {fileID: 4988636493412302103}
-  m_Layer: 0
+  - component: {fileID: 5066603147600494966}
+  m_Layer: 7
   m_Name: Stair (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -239,7 +256,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 597153515173123170}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.022281, y: 1.02, z: -11.545719}
+  m_LocalPosition: {x: 10.022281, y: 1.0199997, z: -11.545719}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -260,8 +277,23 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 3, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5066603147600494966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597153515173123170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9544157d1c276d740bfef83857bf573d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorType: 0
+  colorData: {fileID: 11400000, guid: 0a0aea11295d7ee4cb1996dac66e96ea, type: 2}
+  renderer: {fileID: 7559267703084915195}
 --- !u!1 &1223442529797973022
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,7 +304,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2324183617490915452}
   - component: {fileID: 6739702810181389675}
-  m_Layer: 0
+  - component: {fileID: 2788654479088387964}
+  m_Layer: 7
   m_Name: Stair (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -308,8 +341,23 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 3, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2788654479088387964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223442529797973022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9544157d1c276d740bfef83857bf573d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorType: 0
+  colorData: {fileID: 11400000, guid: 0a0aea11295d7ee4cb1996dac66e96ea, type: 2}
+  renderer: {fileID: 8094341160048667015}
 --- !u!1 &1809947571707492576
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,7 +419,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7af74a1efd329fe4c9085eaee95579ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -403,7 +451,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3068166187603114200}
   - component: {fileID: 6295262297698264527}
-  m_Layer: 0
+  - component: {fileID: 1188941286042195504}
+  m_Layer: 7
   m_Name: Stair (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -439,8 +488,23 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 3, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1188941286042195504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886993075202428090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9544157d1c276d740bfef83857bf573d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorType: 0
+  colorData: {fileID: 11400000, guid: 0a0aea11295d7ee4cb1996dac66e96ea, type: 2}
+  renderer: {fileID: 8827504067239510307}
 --- !u!1 &2049604142152299646
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,7 +695,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1357219579450117223}
   - component: {fileID: 8006489006165463408}
-  m_Layer: 0
+  - component: {fileID: 339591126202243920}
+  m_Layer: 7
   m_Name: Stair (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -667,8 +732,23 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 3, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &339591126202243920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2481046700890191877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9544157d1c276d740bfef83857bf573d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorType: 0
+  colorData: {fileID: 11400000, guid: 0a0aea11295d7ee4cb1996dac66e96ea, type: 2}
+  renderer: {fileID: 4809871674495628700}
 --- !u!1 &2496716835343224534
 GameObject:
   m_ObjectHideFlags: 0
@@ -730,7 +810,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7af74a1efd329fe4c9085eaee95579ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -928,7 +1008,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1718604465599255829}
   - component: {fileID: 7642792147916539906}
-  m_Layer: 0
+  - component: {fileID: 4944740311026053636}
+  m_Layer: 7
   m_Name: Stair (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -964,8 +1045,23 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 3, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4944740311026053636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2837856518950560119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9544157d1c276d740bfef83857bf573d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorType: 0
+  colorData: {fileID: 11400000, guid: 0a0aea11295d7ee4cb1996dac66e96ea, type: 2}
+  renderer: {fileID: 5173647985348947182}
 --- !u!1 &2878983513555523230
 GameObject:
   m_ObjectHideFlags: 0
@@ -1027,7 +1123,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7af74a1efd329fe4c9085eaee95579ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1059,7 +1155,8 @@ GameObject:
   m_Component:
   - component: {fileID: 172133245914393681}
   - component: {fileID: 9199333510857847110}
-  m_Layer: 0
+  - component: {fileID: 5714439673446399046}
+  m_Layer: 7
   m_Name: Stair (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1095,8 +1192,23 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 3, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5714439673446399046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3663722923692234803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9544157d1c276d740bfef83857bf573d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorType: 0
+  colorData: {fileID: 11400000, guid: 0a0aea11295d7ee4cb1996dac66e96ea, type: 2}
+  renderer: {fileID: 5942009944303801770}
 --- !u!1 &4382117937488468500
 GameObject:
   m_ObjectHideFlags: 0
@@ -1407,7 +1519,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7af74a1efd329fe4c9085eaee95579ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1522,7 +1634,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8958757761444663164}
   - component: {fileID: 115675113380811371}
-  m_Layer: 0
+  - component: {fileID: 1920808072002475661}
+  m_Layer: 7
   m_Name: Stair (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1558,8 +1671,23 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 3, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1920808072002475661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5541754554431601438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9544157d1c276d740bfef83857bf573d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorType: 0
+  colorData: {fileID: 11400000, guid: 0a0aea11295d7ee4cb1996dac66e96ea, type: 2}
+  renderer: {fileID: 3190288506643347079}
 --- !u!1 &5753788233018822468
 GameObject:
   m_ObjectHideFlags: 0
@@ -1621,7 +1749,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7af74a1efd329fe4c9085eaee95579ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1870,7 +1998,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7af74a1efd329fe4c9085eaee95579ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2175,7 +2303,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7af74a1efd329fe4c9085eaee95579ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2424,7 +2552,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7af74a1efd329fe4c9085eaee95579ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2622,7 +2750,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4808132795047387394}
   - component: {fileID: 4571426427440790549}
-  m_Layer: 0
+  - component: {fileID: 923188618031559414}
+  m_Layer: 7
   m_Name: Stair (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2658,8 +2787,23 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 3, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &923188618031559414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215209611072247136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9544157d1c276d740bfef83857bf573d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorType: 0
+  colorData: {fileID: 11400000, guid: 0a0aea11295d7ee4cb1996dac66e96ea, type: 2}
+  renderer: {fileID: 1345489442536069369}
 --- !u!1 &8256341295781110409
 GameObject:
   m_ObjectHideFlags: 0
@@ -2721,7 +2865,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7af74a1efd329fe4c9085eaee95579ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2933,7 +3077,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5182448784676010314}
   - component: {fileID: 4189142492056183901}
-  m_Layer: 0
+  - component: {fileID: 2591572611475815086}
+  - component: {fileID: 7688751299770183054}
+  m_Layer: 7
   m_Name: Stair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2969,8 +3115,38 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 3, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2591572611475815086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8597480979254611240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9544157d1c276d740bfef83857bf573d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorType: 0
+  colorData: {fileID: 11400000, guid: 0a0aea11295d7ee4cb1996dac66e96ea, type: 2}
+  renderer: {fileID: 1728829750766895281}
+--- !u!114 &7688751299770183054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8597480979254611240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9544157d1c276d740bfef83857bf573d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorType: 0
+  colorData: {fileID: 0}
+  renderer: {fileID: 0}
 --- !u!1 &8617654421344369659
 GameObject:
   m_ObjectHideFlags: 0
@@ -3032,7 +3208,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7af74a1efd329fe4c9085eaee95579ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
