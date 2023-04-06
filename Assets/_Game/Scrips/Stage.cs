@@ -12,9 +12,16 @@ public class Stage : MonoBehaviour
 
     [SerializeField] Brick brickPrefab;
 
+    private void Start()
+    {
+        for (int i = 0; i < brickPoints.Length; i++)
+        {
+            emptyPoint.Add(brickPoints[i].position);
+        }
+    }
     public void OnInit()
     {
-
+         
     }
 
     public void InitColor(ColorType colorType, int amount)
@@ -28,11 +35,18 @@ public class Stage : MonoBehaviour
     public void NewBrick(ColorType colorType)
     {
         if (emptyPoint.Count > 0 ) 
-        {
+        { 
+            int rand = Random.Range(0, emptyPoint.Count);
             Brick brick = Instantiate(brickPrefab, emptyPoint[Random.Range(0, emptyPoint.Count)], Quaternion.identity);
+            brick.stage = this;
             brick.ChangeColor(colorType);
+            emptyPoint.RemoveAt(rand);
         }
     }
 
+    internal void AddEmptyPoint(Vector3 position)
+    {
+        emptyPoint.Add(position);
+    }
 }
  

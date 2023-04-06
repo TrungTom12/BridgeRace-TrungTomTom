@@ -85,6 +85,8 @@ public class Player : ColorObject
                 stair.ChangeColor(colorType);
                 RemoveBrick();
                 Debug.Log("da doi mau ");
+
+                stage.NewBrick(colorType);
             }
 
             if (stair.colorType != colorType && playerBricks.Count == 0 && skin.forward.z > 0)
@@ -136,8 +138,11 @@ public class Player : ColorObject
 
             if (brick.colorType == colorType)
             {
-                Destroy(brick.gameObject);
+
+                brick.Ondespawn ();
                 AddBrick();
+                Destroy(brick.gameObject);
+                
             }
         }
     }

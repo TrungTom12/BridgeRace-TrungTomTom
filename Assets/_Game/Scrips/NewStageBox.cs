@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NewStageBox : MonoBehaviour
 {
+    //khi va cham vao NewstageBox se tao san cac vien gach
     public Stage stage;
 
     private void OnTriggerEnter(Collider other)
@@ -13,7 +14,7 @@ public class NewStageBox : MonoBehaviour
         if (player != null)
         {
             player.stage = stage ;
-            stage.InitColor(player.colorType, 7);
+            stage.InitColor(player.colorType, 5);
         }
     }
 }

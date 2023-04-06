@@ -1,19 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class Brick : ColorObject 
 {
-    //public ColorType colorType;
-    void Start()
-    {
-        ChangeColor((ColorType)Random.Range(2, 9)); 
-    }
+    [HideInInspector] public Stage stage;
 
-    
-    void Update()
+    public void Ondespawn()
     {
-        
+        stage.AddEmptyPoint(transform.position);
     }
 }
  
