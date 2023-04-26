@@ -7,9 +7,9 @@ public class Brick : ColorObject
 {
     [HideInInspector] public Stage stage;
 
-    public void Ondespawn()
+    public void OnDespawn()
     {
-        stage.AddEmptyPoint(transform.position);
+        stage.RemoveBricks(this);
     }
 }
  

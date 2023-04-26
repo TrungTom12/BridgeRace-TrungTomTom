@@ -2,54 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : ColorObject
+public class Character : ColorObject
 {
-    //[SerializeField] Rigidbody rb;
-    [SerializeField] private float speed = 5;
+    [SerializeField] protected LayerMask stairLayer;
     [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private LayerMask stairLayer;
-    [SerializeField] private Transform skin;
 
     //Brick
     private List<PlayerBrick> playerBricks = new List<PlayerBrick>();
     [SerializeField] private PlayerBrick playerBrickPreFabs;
     [SerializeField] private Transform brickHolder;
 
-    public Stage stage;
-    
+    [HideInInspector] public Stage stage;
+    [SerializeField] protected Transform skin;
 
-    void Start()
+    public int BrickCount => playerBricks.Count; 
+
+    //TODO:Test
+    protected virtual void Start()
     {
-       ChangeColor(ColorType.Red);
-    }  
- 
-    // Update is called once per frame 
-    void Update()
-    {
-        if(Input.GetMouseButton(0))
-        {
-            Vector3 nextPoint = JoystickController.direct * speed * Time.deltaTime + transform.position;
-
-            if (CanMove(nextPoint))
-            {
-                transform.position = CheckGround(nextPoint);
-                //Debug.Log("di duoc ");
-            }
-
-            if (JoystickController.direct != Vector3.zero)
-            {
-                skin.forward = JoystickController.direct;
-            }
-
-            
-
-            //rb.velocity = JoystickController.direct * speed + rb.velocity.y * Vector3.up ; 
-        }
-
-        //if (Input.GetMouseButtonUp(0))
-        //{
-        //    //rb.velocity = Vector3.zero;
-        //}
+        ChangeColor(colorType);
     }
 
     //Chech diem tiep theo cos phai la ground khong
@@ -58,7 +29,7 @@ public class Player : ColorObject
     public Vector3 CheckGround(Vector3 nextPoint)
     {
         RaycastHit hit;
-        if (Physics.Raycast(nextPoint,Vector3.down,out hit , 2f, groundLayer))
+        if (Physics.Raycast(nextPoint, Vector3.down, out hit, 2f, groundLayer))
         {
             return hit.point + Vector3.up * 1f;
         }
@@ -110,7 +81,7 @@ public class Player : ColorObject
         playerBricks.Add(playerBrick);
     }
 
-    public void RemoveBrick() 
+    public void RemoveBrick()
     {
         if (playerBricks.Count > 0)
         {
@@ -139,12 +110,11 @@ public class Player : ColorObject
             if (brick.colorType == colorType)
             {
 
-                brick.Ondespawn ();
+                brick.OnDespawn();
                 AddBrick();
                 Destroy(brick.gameObject);
-                
+
             }
         }
-    }
+    }  
 }
- 

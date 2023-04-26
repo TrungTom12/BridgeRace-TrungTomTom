@@ -12,20 +12,17 @@ public class Stage : MonoBehaviour
 
     [SerializeField] Brick brickPrefab;
 
-    private void Start()
+    internal void OnInit()
     {
         for (int i = 0; i < brickPoints.Length; i++)
         {
             emptyPoint.Add(brickPoints[i].position);
         }
     }
-    public void OnInit()
-    {
-         
-    }
 
     public void InitColor(ColorType colorType, int amount)
     {
+        int amout = brickPoints.Length / LevelManager.Instance.CharacterAmount;
         for (int i = 0; i < amount; i++)
         {
             NewBrick(colorType);
@@ -41,12 +38,33 @@ public class Stage : MonoBehaviour
             brick.stage = this;
             brick.ChangeColor(colorType);
             emptyPoint.RemoveAt(rand);
+
+            bricks.Add(brick);
         }
     }
 
-    internal void AddEmptyPoint(Vector3 position)
+    internal void RemoveBricks(Brick brick)
     {
-        emptyPoint.Add(position);
+        emptyPoint.Add(brick.transform.position);
+        bricks.Remove(brick);
+    }
+
+
+
+    public List<Brick> bricks = new List<Brick>();
+    internal Brick SeekBrickPoint(ColorType colorType) // tim vi tri brick danh cho Bot 
+    {
+        Brick brick = null;
+        for (int i = 0; i < bricks.Count; i++)
+        {
+            if (bricks[i].colorType == colorType)
+            {
+                brick = bricks[i];
+                break;
+            }
+        } 
+
+        return brick;
     }
 }
  

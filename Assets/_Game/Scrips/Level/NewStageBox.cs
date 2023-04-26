@@ -9,12 +9,13 @@ public class NewStageBox : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Player player = other.GetComponent<Player>();
+       Bot character = other.GetComponent<Bot>();
 
-        if (player != null)
+        if (character != null)
         {
-            player.stage = stage ;
-            stage.InitColor(player.colorType, 5);
+            character.stage = stage ;
+            stage.InitColor(character.colorType, 5 );
         }
     }
+
 }
