@@ -34,11 +34,11 @@ public class Stage : MonoBehaviour
         if (emptyPoint.Count > 0 ) 
         { 
             int rand = Random.Range(0, emptyPoint.Count);
-            Brick brick = Instantiate(brickPrefab, emptyPoint[Random.Range(0, emptyPoint.Count)], Quaternion.identity);
+            //Brick brick = Instantiate(brickPrefab, emptyPoint[Random.Range(0, emptyPoint.Count)], Quaternion.identity);
+            Brick brick = Instantiate(brickPrefab, emptyPoint[rand], Quaternion.identity);
             brick.stage = this;
             brick.ChangeColor(colorType);
             emptyPoint.RemoveAt(rand);
-
             bricks.Add(brick);
         }
     }

@@ -9,7 +9,7 @@ public class NewStageBox : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-       Bot character = other.GetComponent<Bot>();
+        Character character = other.GetComponent<Character>();
 
         if (character != null)
         {

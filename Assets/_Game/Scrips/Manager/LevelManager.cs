@@ -24,6 +24,7 @@ public class LevelManager :Singleton<LevelManager>
     {
         LoadLevel(0);
         OnInit();
+        OnStartGame();
     }
 
     public void OnInit()
