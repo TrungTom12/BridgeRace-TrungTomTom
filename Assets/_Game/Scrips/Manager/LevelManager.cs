@@ -18,13 +18,19 @@ public class LevelManager :Singleton<LevelManager>
     private Level currentLevel;
 
     readonly List<ColorType> colorTypes = new List<ColorType>() {/*ColorType.Black,*/ ColorType.Red, ColorType.Blue, ColorType.Green, ColorType.Yellow, ColorType.Orange, ColorType.Brown, ColorType. Violet };
+    //LoadLevel
+    private int LevelIndex;
 
-
+    private void Awake()
+    {
+        LevelIndex = PlayerPrefs.GetInt("Level", 0);
+    }
     private void Start()
     {
         LoadLevel(0);
         OnInit();
-        OnStartGame();
+        //OnStartGame();
+        UIManager.Ins.OpenUI<MianMenu>();
     }
 
     public void OnInit()
@@ -47,20 +53,22 @@ public class LevelManager :Singleton<LevelManager>
         //init random vi tri cua player
         int rand = Random.Range(0, CharacterAmount);
         playerPrefabs.transform.position = startPoint[rand];
+        playerPrefabs.transform.rotation = Quaternion.identity; //???
         startPoint.RemoveAt(rand);
 
         //set color player
         playerPrefabs.ChangeColor(colorDatas[rand]);
         colorDatas.RemoveAt(rand);
 
-        
+        playerPrefabs.OnInit();
 
         //init bot 
         for (int i = 0; i < CharacterAmount - 1; i++)
         {
             Debug.Log(startPoint[i]);
-            Bot bot  = Instantiate(botPrefabs, startPoint[i],Quaternion.identity);
-            bot.ChangeColor(colorDatas[i]); 
+            Bot bot = Instantiate(botPrefabs, startPoint[i],Quaternion.identity);
+            bot.ChangeColor(colorDatas[i]);
+            bot.OnInit();
             bots.Add(bot);
             
         }
@@ -87,6 +95,7 @@ public class LevelManager :Singleton<LevelManager>
 
     public void OnStartGame()
     {
+        GameManager.Ins.ChangeState(GameState.Gameplay); //ChuyenState sang Gameplay roi moi dc hoat dong
         for (int i = 0; i < bots.Count; i++)
         {
             bots[i].ChangeState(new PatrolState());
@@ -106,8 +115,26 @@ public class LevelManager :Singleton<LevelManager>
     {
         for (int i = 0; i < bots.Count; i++)
         {
-            Destroy(bots[i]);
+            Destroy(bots[i].gameObject); // nho them gamObject neu khong bot chi xoa trong code
         }
         bots.Clear();
+    }
+
+    internal void OnRetry()
+    {
+        OnReset();
+        LoadLevel(LevelIndex);
+        OnInit();
+        UIManager.Ins.OpenUI<MianMenu>();
+
+    }
+
+    internal void OnNextLevel()
+    { 
+        LevelIndex++;
+        PlayerPrefs.SetInt("Level", LevelIndex);
+        OnReset();
+        OnInit();
+        UIManager.Ins.OpenUI<MianMenu>();
     }
 }

@@ -8,28 +8,33 @@ public class Player : Character
    
     void Update()
     {
-        if(Input.GetMouseButton(0))
+        if(GameManager.Ins.IsState(GameState.Gameplay))
         {
-            Vector3 nextPoint = JoystickController.direct * speed * Time.deltaTime + transform.position;
 
-            if (CanMove(nextPoint))
+            if (Input.GetMouseButton(0))
             {
-                transform.position = CheckGround(nextPoint);
-                //Debug.Log("di duoc ");
+                Vector3 nextPoint = JoystickController.direct * speed * Time.deltaTime + transform.position;
+
+                if (CanMove(nextPoint))
+                {
+                    transform.position = CheckGround(nextPoint);
+                    //Debug.Log("di duoc ");
+                }
+
+                if (JoystickController.direct != Vector3.zero)
+                {
+                    skin.forward = JoystickController.direct;
+                }
+
+                ChangeAnim("run");
             }
 
-            if (JoystickController.direct != Vector3.zero)
+            if (Input.GetMouseButtonUp(0))
             {
-                skin.forward = JoystickController.direct;
+                ChangeAnim("idle");
             }
-
-            //rb.velocity = JoystickController.direct * speed + rb.velocity.y * Vector3.up ; 
         }
 
-        //if (Input.GetMouseButtonUp(0))
-        //{
-        //    //rb.velocity = Vector3.zero;
-        //}
     }
 
 }

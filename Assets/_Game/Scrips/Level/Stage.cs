@@ -22,7 +22,7 @@ public class Stage : MonoBehaviour
 
     public void InitColor(ColorType colorType, int amount)
     {
-        int amout = brickPoints.Length / LevelManager.Instance.CharacterAmount;
+        int amout = brickPoints.Length / LevelManager.Ins.CharacterAmount;
         for (int i = 0; i < amount; i++)
         {
             NewBrick(colorType);

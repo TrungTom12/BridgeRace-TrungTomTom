@@ -17,6 +17,11 @@ public class Character : ColorObject
 
     public int BrickCount => playerBricks.Count; 
 
+    public virtual void OnInit()
+    {
+        ClearBrick();  
+        skin.rotation = Quaternion.identity;
+    }
     //TODO:Test
     protected virtual void Start()
     {
@@ -116,5 +121,19 @@ public class Character : ColorObject
 
             }
         }
-    }  
+    }
+
+    public Animator anim;
+    private string currentAnim;
+
+    public void ChangeAnim(string animName)
+    {
+        if (currentAnim != animName)
+        {
+            anim.ResetTrigger(currentAnim);
+            currentAnim = animName;
+            anim.SetTrigger(currentAnim);
+        }
+
+    }
 }

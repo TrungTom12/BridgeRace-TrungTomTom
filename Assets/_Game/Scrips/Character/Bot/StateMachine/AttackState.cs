@@ -10,7 +10,7 @@ public class AttackState : IState<Bot>
         //TODO:test
         //Transform target = GameObject.Find("Win").transform;
         //t.SetDestination(target.position);
-        t.SetDestination(LevelManager.Instance.FinishedPoint);
+        t.SetDestination(LevelManager.Ins.FinishedPoint);
     }
 
     public void OnExecute(Bot t)

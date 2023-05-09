@@ -20,6 +20,12 @@ public class Bot : Character
     //    ChangeState(new PatrolState());
     //}
 
+    public override void OnInit()
+    {
+        base.OnInit();
+        ChangeAnim("idle");
+    }
+
     public void SetDestination(Vector3 position)  //tu tim den muc tieu 
     {
         agent.enabled = true;
@@ -32,7 +38,7 @@ public class Bot : Character
 
     private void Update()
     {
-        if (currentState != null)
+        if (GameManager.Ins.IsState(GameState.Gameplay) && currentState != null)
         {
             currentState.OnExecute(this);
             //Check stair

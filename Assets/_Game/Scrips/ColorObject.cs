@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ColorObject : MonoBehaviour
+public class ColorObject : GameUnit
 {
     public ColorType colorType;
     
     [SerializeField] private ColorData colorData;
-    [SerializeField] private MeshRenderer renderer;
+    [SerializeField] private Renderer renderer;
 
     public void ChangeColor(ColorType colorType)
     {
